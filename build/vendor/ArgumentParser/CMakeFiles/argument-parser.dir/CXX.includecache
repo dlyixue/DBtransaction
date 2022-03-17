@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/e/xhc/Ccode/transaction-tester/vendor/ArgumentParser/ArgumentParser.cc
+ArgumentParser.h
+/mnt/e/xhc/Ccode/transaction-tester/vendor/ArgumentParser/ArgumentParser.h
+
+/mnt/e/xhc/Ccode/transaction-tester/vendor/ArgumentParser/ArgumentParser.h
+cassert
+-
+map
+-
+memory
+-
+iostream
+-
+sstream
+-
+vector
+-
+functional
+-
+optional
+-
+

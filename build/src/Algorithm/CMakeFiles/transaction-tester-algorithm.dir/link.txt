@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wall -std=c++17 -O2  -shared -Wl,-soname,libtransaction-tester-algorithm.so -o ../../lib/libtransaction-tester-algorithm.so CMakeFiles/transaction-tester-algorithm.dir/Transaction.cc.o  -Wl,-rpath,/mnt/e/xhc/Ccode/transaction-tester/build/lib ../../lib/libargument-parser.so -lpthread 

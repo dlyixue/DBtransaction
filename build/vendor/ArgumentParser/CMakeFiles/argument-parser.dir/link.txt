@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wall -std=c++17 -O2  -shared -Wl,-soname,libargument-parser.so -o ../../lib/libargument-parser.so CMakeFiles/argument-parser.dir/ArgumentParser.cc.o 

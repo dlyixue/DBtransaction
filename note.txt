@@ -1,0 +1,24 @@
+2PL：
+    分为两个阶段，只能获得一次锁
+    先加锁，最后再释放锁
+    出现冲突，按直接回滚
+锁表：
+    map<datablock, object> mutex : 增加数据项
+    object: transaction 指针,mutex ; add,delect
+    map<transaction ID,vector<datablocks>> : 记录修改的数据项
+    map<transaction ID,vector<data>> : 记录修改数据
+    std::unordered_map<RecordKey, RecordItem> Initial_data;
+      if(tr->timestamp < new_tr->timestamp){
+                return false;
+            }
+            else{
+                if(tr!=nullptr)
+                    tr->rollback();
+                if(lock(new_tr)){
+                    tr = new_tr;
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
